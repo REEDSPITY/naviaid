@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>制作球赛积分表</title>
+    <style type="text/css">
+        #messi{
+            width: 900px;
+            border-collapse: collapse;
+            font-family: 微软雅黑;
+            text-align: center;
+            margin: auto;
+        }
+        #messi caption{
+            padding: 6px 0px;
+            color: #3D580B;
+            font-size: 25px;
+        }
+        #messi th,td{
+            border: 1px solid #aaaaaa;
+        }
+        #messi thead th{
+            border-bottom: 2px solid #3D580B;
+            background: #8FC629;
+            color: #ffff00;
+            padding: 5px 0px;
+        }
+        #messi th.title{
+            background: #E3E685;
+        }
+        #messi th{
+            background: #F2F4B9;
+        }
+
+        #messi tfoot td{
+            border-width: 0px;/*去掉表格边框*/
+            text-align: right;
+            font-size: 12px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<img src="../mylogo.png" alt="logo" height="100"/>
+    <table id="messi">
+        <caption>欧洲豪门最新积分</caption>
+
+        <thead>
+        <tr>
+            <th>球队</th>
+            <th>胜&nbsp;&nbsp;&nbsp;</th>        <!--&nbsp;是空格-->
+            <th>平&nbsp;&nbsp;&nbsp;</th>
+            <th>负&nbsp;&nbsp;&nbsp;</th>
+            <th>积分</th>
+            <th>排名</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="6">geniusmader@gmail.com</td>
+        </tr>
+        </tfoot>
+        <tbody>
+    <tr>
+        <th colspan="6" class="title">西班牙甲级联赛</th>
+    </tr>
+    <tr>
+        <th>皇家马德里</th>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <th>巴塞罗那</th>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <th>瓦伦西亚</th>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    </tbody>
+
+
+        <!--重复以上代码-->
+        <tbody>
+        <tr>
+            <th colspan="6" class="title">意大利甲级联赛</th>
+        </tr>
+        <tr>
+            <th>AC米兰</th>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <th>国际米兰</th>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>罗马</th>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>17</td>
+        </tr>
+        </tbody>
+
+        <tbody>
+        <tr>
+            <th colspan="6" class="title">英格兰超级联赛</th>
+        </tr>
+        <tr>
+            <th>曼彻斯特联</th>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>4</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <th>切尔西</th>
+            <td>3</td>
+            <td>1</td>
+            <td>0</td>
+            <td>10</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>利物浦</th>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
