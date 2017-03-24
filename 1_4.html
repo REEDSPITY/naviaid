@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间钟</title>
+    <script type="text/javascript">
+        //var int=self.setInterval("startTime()",50);
+        function startTime()
+        {
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            m=checkTime(m);//是否小于10
+            s=checkTime(s);
+            document.getElementById('timeclock').innerHTML=h+":"+m+":"+s;
+            t=setTimeout(arguments.callee,50);
+        }
+        function checkTime(i)
+        {
+            if (i<10)
+            {
+                i="0" + i;
+            }
+            return i;
+        }
+    </script>
+</head>
+<body onload="startTime()">
+<div id="timeclock"></div>
+</body>
+</html>
