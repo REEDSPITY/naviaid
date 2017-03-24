@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击计数</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 200px;
+            background: green center;
+            margin: auto;
+
+        }
+    </style>
+    <script type="text/javascript">
+        var count=0;
+        function acounting(){
+            count++;
+            count1.innerHTML=count;//.innerHTML将js内容显示到网页上
+        }
+    </script>
+</head>
+<body>
+<form>
+<div onclick="acounting()"><!--onclick()表示这里被点击-->
+    <p>共被点击：
+    <span  id="count1"></span>
+    </p>
+</div>
+</form>
+</body>
+</html>
