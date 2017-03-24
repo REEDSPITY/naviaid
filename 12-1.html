@@ -1,0 +1,82 @@
+<!--
+form
+表单最重要的作用就是在客户端接收用户的信息
+然后将数据递交给后台的程序来操控这些数据。
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算矩形的面积</title>
+
+    <style type="text/css">
+        /*.result{
+            font-weight: bold;
+        }*/
+        #cent{
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        #tdf{
+            padding: 20px;
+            float: right;
+        }
+    </style>
+
+    <script language="JavaScript">
+        /*
+        计算矩形面积和体积的javascript
+        定义一个函数作为事件
+        */
+        function calculate() {
+            /*获取用户数据 定义变量*/
+            var length=document.loandata.length.value;
+            var width=document.loandata.width.value;
+            var height=document.loandata.height.value;
+            /*获取span标签的对象*/
+            var area=document.getElementById("area");/*id为area，这行删掉也能算出来。。。*/
+            /*输出计算的结果*/
+            area.innerHTML=length*width;
+            volume.innerHTML=length*width*height;
+        }
+    </script>
+</head>
+<body>
+<form name="loandata">
+    <table id="cent">
+        <tr><td><b>输入长宽高的数值</b></td></tr>
+        <tr>
+            <td>(1)矩形长度是：</td>
+            <td><input type="text" name="length"></td><!--文本输入-->
+        </tr>
+        <tr>
+            <td>(1)矩形宽度是：</td>
+            <td><input type="text" name="width"></td><!--文本输入-->
+        </tr>
+        <tr>
+            <td>(1)矩形高度是：</td>
+            <td><input type="text" name="height"></td><!--文本输入-->
+        </tr>
+
+        <tr>
+            <td></td>
+            <!--按键点击运行javascript-->
+            <td id="tdf"><input type="button" value="运行" onclick="calculate()"></td>
+        </tr>
+
+        <tr><td><b>矩形的面积和体积分别是：</b></td></tr>
+
+        <tr>
+            <td>矩形的面积：</td>
+            <td><span id="area"></span></td>
+        </tr>
+        <tr>
+            <td>矩形的体积：</td>
+            <td><span id="volume"></span></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
